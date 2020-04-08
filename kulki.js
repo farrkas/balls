@@ -1,11 +1,6 @@
 // https://www.codewars.com/kata/53f0f358b9cb376eca001079/train/javascript
 
 var Ball = function (ballType) {
-
-    const ball = { ballType: "regular" };
-
-    if (ballType != null && ballType != undefined) ball.ballType = ballType;
-
-    return ball;
+this.ballType=ballType || `regular;`
 };
-console.log(new Ball());
+console.log(new Ball(`special`));
